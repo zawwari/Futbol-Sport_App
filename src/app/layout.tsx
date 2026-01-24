@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter as Geist   }
+ from "next/font/google";
 import "../styles/globals.scss";
 import Navigation from "@/components/Navigation";
 import ClientLayout from "@/components/ClientLayout";
@@ -9,10 +10,6 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "FITTFIND - Connecting Football Talent with Opportunities",
@@ -33,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         <Navigation />
         <ClientLayout>{children}</ClientLayout>
