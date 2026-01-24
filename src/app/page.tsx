@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="relative w-full min-h-screen">
       {/* Floating Menu */}
-      <div className="fixed bottom-15 left-1/2 z-30 -translate-x-1/2">
+      <div className="fixed bottom-10 left-1/2 z-30 -translate-x-1/2">
         <FloatingMenu />
       </div>
 
